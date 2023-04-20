@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskManeger.App">
+    <!--
+        Define global resources and styles here, that apply to all pages in your app.
+    -->
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#2196F3</Color>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Disabled">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="#332196F3" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>  
+            
+            <LinearGradientBrush x:Key="ButtonYellowBrown" StartPoint="0,0" EndPoint="0,0.9">
+                <GradientStop Color="#310062" Offset="0.01" />
+                <GradientStop Color="#00008b" Offset="0.6" />
+                <GradientStop Color="#082567" Offset="1.0" />
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="ListGreenWhiteRed" StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="DeepSkyBlue" Offset="0.01" />
+                <GradientStop Color="GhostWhite" Offset="0.45" />
+                <GradientStop Color="#99b5e5" Offset="0.9" />
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="ShellYellowBrown" StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#ffffff" Offset="0.01" />
+                <GradientStop Color="#f9fbff" Offset="0.45" />
+                <GradientStop Color="#99b5e5" Offset="0.9" />
+            </LinearGradientBrush>
+
+
+        </ResourceDictionary>    
+    </Application.Resources>
+</Application>
